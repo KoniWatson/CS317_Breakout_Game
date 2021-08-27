@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale= 1, maximum-scale= 1, user-scalable= no"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <link href="breakoutGameStyle.css" rel="stylesheet" type="text/css"/>
+
+    <title>Breakout Game</title>
+</head>
+<body>
+
+<div id="startMenu" class="menu">
+    <h1>BRICK BREAKER</h1>
+    <div class="menuContent">
+        <a href="#" onclick="view.closeMenu(1)">ONE PLAYER</a>
+        <a href="#" onclick="view.closeMenu(2)">TWO PLAYERS</a>
+
+    </div>
+</div>
+
+<h1>BRICK BREAKER</h1>
+<p>===============================</p>
+
+<div id="game">
+    <p>.</p>
+    <p id = "score"></p>
+    <canvas id="gameBoard"></canvas>
+    <canvas id="paddleBoard"></canvas>
+</div>
+
+<p> <===== <strong id="instruct">TILT TO PLAY</strong> =====> </p>
+
+<div id="players">
+    <ul>
+        <li>
+            <button id="pause"><strong>PAUSE</strong></button>
+        </li>
+        <li>
+            <button id="play"><strong>PLAY</strong></button>
+        </li>
+    </ul>
+</div>
+
+<p><strong id="life">LIFE'S LEFT: 3</strong></p>
+<footer>
+    <p>By Koni Watson | BreakoutGame</p>
+</footer>
+
+<script src="breakoutGameModel.js"></script>
+<script src="breakoutGameView.js"></script>
+<script src="breakoutGameController.js"></script>
+</body>
+</html>

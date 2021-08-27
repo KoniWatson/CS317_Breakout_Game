@@ -1,0 +1,132 @@
+html {
+    margin: 0;
+    padding-left: 0;
+    border: none;
+    background-image: linear-gradient(#242582, white);
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    font-family: Arial;
+    color: snow;
+    font-style: italic;
+}
+
+h1 {
+    color: snow;
+    text-decoration: underline overline snow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding: 1rem;
+    background-color: #F64C72;
+    position: absolute;
+    border: solid 0.3rem #f1f1f1;
+    border-radius: 0.5rem;
+}
+
+
+#game {
+    background-color: #f1f1f1;
+    height: 66vh;
+    align-content: center;
+    border-radius: 0.5rem;
+}
+
+
+#gameBoard {
+    padding: 0;
+    margin: 0;
+    height: 85%;
+    width: 100%;
+}
+#paddleBoard {
+    padding: 0;
+    margin: 0;
+    height: 4%;
+    width: 100%;
+
+}
+
+#score {
+    float: right;
+    padding-right: 2rem;
+    color: black;
+}
+
+
+#instruct {
+    font-size: 1rem;
+    color: snow;
+}
+
+
+
+#players {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+#players button {
+    border-radius: .3rem;
+    border: solid 0.2rem #F64C72;
+    background-color: snow;
+    color: #242582;
+    font-size: .9rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+#players ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+#players ul li {
+    padding-right: 0.1rem;
+}
+
+
+
+footer {
+    bottom: 0;
+    left: 0;
+    background-color: #F64C72;
+    position: fixed;
+    border-radius: 1.5rem 1.5rem 0 0;
+    width: 100%;
+}
+footer p {
+    padding: 0;
+    font-size: small;
+    color: snow;
+}
+
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+}
+.menuContent {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+.menu a {
+    padding: 3rem;
+    text-decoration: none;
+    font-size: 36px;
+    color: snow;
+    display: block;
+}
+.menu h1 {
+    position: relative;
+    opacity: 0.9;
+}
